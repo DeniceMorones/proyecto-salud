@@ -70,7 +70,7 @@ const btnSecundario = `${btnBase} border border-linea bg-white hover:border-azul
 function Marca() {
   return (
     <span className="flex items-center gap-2.5 font-serif text-2xl">
-      <span className="h-3 w-3 rounded-full bg-gradient-to-br from-azul to-pastel2 ring-4 ring-pastel" />
+      
       {SITIO.tema}
     </span>
   );
@@ -153,7 +153,6 @@ function Hero() {
 
       <div className={`${contenedor} relative grid items-center gap-11 md:grid-cols-[1.25fr_0.85fr] md:gap-16`}>
         <div>
-          <p className={eyebrow}>Informática Médica · Proyecto web</p>
           <h1 className="font-serif text-5xl font-normal leading-[1.02] tracking-tight sm:text-6xl lg:text-[4.8rem]">
             {SITIO.tema}
             <em className="block text-azul2">información que cuida.</em>
@@ -272,16 +271,12 @@ function Ventana({ subtema, onCerrar, onAbrir }) {
         role="dialog"
         aria-modal="true"
         onClick={(e) => e.stopPropagation()}
-        className="flex h-[min(86vh,820px)] w-full max-w-5xl animate-sube flex-col overflow-hidden rounded-3xl bg-white shadow-[0_40px_100px_-30px_rgba(31,52,80,0.45)]"
+        className="flex h-[min(86vh,820px)] w-full max-w-5xl animate-sube flex-col overflow-hidden rounded-xl bg-white shadow-[0_40px_100px_-30px_rgba(31,52,80,0.45)]"
       >
         {/* Barra de la ventana */}
         <div className="flex items-center gap-4 border-b border-linea bg-fondo px-5 py-3.5">
-          <div className="flex gap-1.5">
-            <i className="h-[11px] w-[11px] rounded-full bg-pastel2" />
-            <i className="h-[11px] w-[11px] rounded-full bg-pastel" />
-            <i className="h-[11px] w-[11px] rounded-full bg-[#EDF3F9]" />
-          </div>
-          <span className="flex-1 truncate text-xs text-suave">
+          
+          <span className="ml-2 flex-1 truncate text-xs text-suave">
             {subtema.seccion.titulo} / {subtema.titulo}
           </span>
           <button
@@ -317,8 +312,8 @@ function Ventana({ subtema, onCerrar, onAbrir }) {
             <p className="mb-3.5 max-w-[640px] text-lg text-tinta">{LOREM_CORTO}</p>
             <p className={parrafo}>{LOREM}</p>
 
-            <div className="my-6 max-w-[640px] rounded-r-2xl border-l-[3px] border-azul bg-pastel px-5 py-4 text-[0.94rem]">
-              <strong>Punto clave.</strong> {LOREM_CORTO}
+            <div className="my-6 max-w-[640px] rounded-r-2xl  bg-pastel px-5 py-4 text-[0.94rem]">
+              <strong>Punto clave si quieres info aqui.</strong> {LOREM_CORTO}
             </div>
 
             <h4 className={h4}>Subtítulo de prueba</h4>
@@ -329,8 +324,8 @@ function Ventana({ subtema, onCerrar, onAbrir }) {
               <li>Elemento de lista de prueba número tres.</li>
             </ul>
 
-            <div className="my-8 grid h-52 place-items-center rounded-2xl border-[1.5px] border-dashed border-pastel2 bg-[repeating-linear-gradient(45deg,#fbfdff,#fbfdff_12px,#F7FAFD_12px,#F7FAFD_24px)] text-sm text-azul">
-              Espacio para imagen, infografía o video
+            <div className="my-8 grid h-52 place-items-center rounded-2xl border-[1.5px] border-dashed border-pastel2 text-sm text-azul">
+             IMG
             </div>
 
             <h4 className={h4}>Referencias de este subtema</h4>
@@ -339,9 +334,7 @@ function Ventana({ subtema, onCerrar, onAbrir }) {
               <li>NOM-000-SSA0-0000. Título de la norma de prueba. DOF; 0000.</li>
             </ol>
 
-            <button onClick={() => onAbrir(siguiente.id)} className={`${btnSecundario} mt-9`}>
-              Siguiente: {siguiente.titulo} →
-            </button>
+          
           </div>
         </div>
       </article>
