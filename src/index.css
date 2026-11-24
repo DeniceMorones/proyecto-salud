@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+/* Paleta y tipografía del sitio (Tailwind v4) */
+@theme {
+  --color-fondo: #F7FAFD;
+  --color-pastel: #E3EEF8;
+  --color-pastel2: #CFE2F3;
+  --color-azul: #8DB4DC;
+  --color-azul2: #5E8DBF;
+  --color-tinta: #1F3450;
+  --color-suave: #5B6B80;
+  --color-linea: #E2EAF3;
+
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
+
+  --animate-aparece: aparece 0.25s ease;
+  --animate-sube: sube 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  @keyframes aparece { from { opacity: 0; } }
+  @keyframes sube { from { opacity: 0; transform: translateY(24px) scale(0.98); } }
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
