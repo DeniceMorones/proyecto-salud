@@ -6,7 +6,7 @@ import fisiopatologia1Imagen from "./assets/public/fisiopatologia1.jpg";
 import fisiopatologia2Imagen from "./assets/public/fisiopatologia2.jpg";
 import fisiopatologia3Imagen from "./assets/public/fisiopatologia3.jpg";
 import tratamientoImagen from "./assets/public/tratamiento.jpg";
-import sintomasImagen from "./assets/public/sintomas-y-señales.jpg";
+import sintomasImagen from "./assets/public/sintomas-y-senales.jpg";
 import prevencionImagen from "./assets/public/prevencion-y-estilo.jpg";
 
 const SITIO = {
